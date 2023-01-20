@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Adaptive</title>
+</head>
+<style>
+    .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header {
+        background-color: rgb(115, 216, 241);
+        height: 30px;
+        font-weight: bolder;
+        text-align: center;
+        color: blue;
+        padding-top: 20px;
+    }
+
+    .foot {
+        background-color: rgb(115, 216, 241);
+        height: 30px;
+        font-weight: bolder;
+        text-align: center;
+        color: blue;
+        padding-top: 20px;
+    }
+
+    .but {
+        display: none;
+        border: solid 1px;
+        border-radius: 5px;
+        border-color:black;
+        color: blue;
+    }
+
+    .midl {
+        display: flex;
+    }
+
+    .navi {
+        background-color: rgba(248, 246, 100, 0.856);
+        width: 250px;
+        font-weight: bolder;
+        text-align: center;
+        color: black;
+        padding-right: 10px;
+
+    }
+
+    .content {
+        background-color: white;
+        font-weight: bolder;
+        padding-left: 10px"
+
+    }
+
+   
+    @media (max-width: 768px) {
+        .form {
+           display: inline;
+        }
+
+        .header {
+            display: none;
+
+        }
+
+        .foot {
+            display: none;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .form {
+            width: 30%;
+        }
+
+        .header {
+            display: none;
+        }
+
+        .foot {
+            display: none;
+        }
+
+        .but {
+            display: block;
+        }
+
+        .navi {
+            display: none;
+        }
+
+        .content {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="form">
+
+        <div class="header"> ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</div>
+        <div class="control"></div> <button class="but"> Menu </button>
+
+            <div class="midl">
+
+                <div class="navi"> Виды спорта: <ol style="list-style-type:disc">
+
+                        <li> <a href="#"> конькобежный <br> спорт</br> </a> </li>
+                        <li> <a href="#"> биатлон </a> </li>
+                        <li> <a href="#"> футбол </a> </li>
+                        <li> <a href="#"> стрельба из <br>лука</br> </a> </li>
+                        <li> <a href="#"> прыжки <br> в длинну </br> </a> </li>
+                        <li> <a href="#"> прыжки <br> в высоту </br> </a> </li>
+                        <li> <a href="#"> фигурное <br> катание </br> </a> </li>
+                        <li> <a href="#"> синхронное <br> плавание </br></a> </li>
+                        <li> <a href="#"> шахматы </a> </li>
+                        <li> <a href="#"> шашки </a> </li>
+
+                    </ol>
+
+                </div>
+
+                <div class="content">
+
+                    <img src="5football.png" style="float:left">
+                    <h1 style="text-align:center"> Футбол</h1>
+
+                    <p> Футбол (англ. football от foot «ступня» + ball «мяч») — командный вид спорта, в котором
+                        целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее
+                        количество раз, чем команда соперника. В настоящее время самый популярный и массовый вид спорта
+                        в
+                        мире.
+                        В XIX веке футбол в Англии приобрёл популярность, сравнимую с крикетом. В него играли в основном
+                        в
+                        колледжах. В некоторых колледжах правила разрешали ведение и передачу мяча руками, в других это,
+                        напротив, запрещалось. Первая попытка создать единые правила была предпринята в 1846 году, когда
+                        встретились представители нескольких колледжей. Они установили первый свод правил. В 1857 году
+                        был
+                        основан первый специализированный футбольный клуб — «Шеффилд». В 1863 году после долгих
+                        переговоров
+                        был
+                        принят свод правил Футбольной Ассоциации Англии. Также были приняты размеры поля и ворот. А в
+                        1871
+                        году
+                        был основан Кубок Англии — старейший футбольный турнир в мире. В 1891 году было принято правило
+                        о
+                        пенальти. Но сначала пенальти билось не с точки, а с линии, которая так же, как и сейчас,
+                        находилась
+                        на
+                        расстоянии 11 метров от ворот.</p>
+                </div>
+            </div>
+
+            <div class="foot"> ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
+        </div>
