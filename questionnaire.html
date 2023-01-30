@@ -1,0 +1,36 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+var data = [
+  prompt('ФИО полностью ..... кирилицей через пробел:').trim(),
+  Number(prompt('Ваш полный возраст в годах(цифрами):').trim()),
+  confirm('Ваш пол. Мужской(ОК) \ Женский(ОТМЕНА):')
+];
+if (data[2]) data[2] = 'мужской'; else data[2] = 'женский';
+if ((data[1] >= 63 && data[2] === false) || (data[1] >= 65 && data[2] === true)) data.push('да'); else data.push('нет');
+alert('ФИО: ' + data[0] + '\n' +
+            'Ваш полный возраст, г: ' + data[1] + '\n' +
+            'Ваш полный возраст, дн: ' + (data[1] * 365) + '\n' +
+            'Через 5 лет Вам будет: ' + (data[1] + 5) + '\n' +
+            'Ваш пол: ' + data[2] + '\n' +
+            'Вы на пенсии: ' + data[3]);
+
+
+</script>
+
+</html>
+
